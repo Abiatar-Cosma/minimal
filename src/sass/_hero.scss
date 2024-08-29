@@ -1,4 +1,58 @@
 .hero {
-    color: darkorange;
-    background-color: black;
+  margin: 0 auto;
+  background-color: darkgray;
+  background-image: url('../images/hero-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero-wrap {
+  max-width: 375px;
+  min-height: 717px;
+  margin: 0 auto;
+  padding: 140px 0 313px 0;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', sans-serif;
+  max-width: 285px;
+  margin-bottom: 14px;
+  font-size: 28px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #0a224a;
+}
+
+.hero-text {
+  font-size: 16px;
+  margin-bottom: 28px;
+  color: #0a224a;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  height: 48px;
+  padding: 12px 65px;
+  background-color: #0a224a;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #061835;
 }
