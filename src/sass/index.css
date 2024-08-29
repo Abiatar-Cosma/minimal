@@ -1,10 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-
 :root {
-  --font-family: 'Roboto', sans-serif;
-  --font-family-hero: 'Playfair Display', serif;
-  --Blue-font: #0a224a;
-  --White: #ffffff;
+  --font-family: "Roboto", sans-serif;
+  --font-family-hero: "Playfair Display", serif;
+  --Blue-font: #0A224A;
+  --White: #FFFFFF;
 }
 
 *,
@@ -23,15 +22,12 @@ img {
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #0a224a;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 h1,
@@ -82,20 +78,17 @@ ul {
     width: 375px;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     width: 768px;
     padding: 0 32px;
   }
 }
-
 @media (min-width: 1280px) {
   .container {
     width: 1240px;
   }
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -104,7 +97,53 @@ ul {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.header {
+  color: darkorange;
+  background-color: black;
+}
+
+.hero {
+  color: darkorange;
+  background-color: black;
+}
+
+.about {
+  color: darkorange;
+  background-color: black;
+}
+
+.prices {
+  color: darkorange;
+  background-color: black;
+}
+
+.products {
+  color: darkorange;
+  background-color: black;
+}
+
+.bestsellers {
+  color: darkorange;
+  background-color: black;
+}
+
+.newsletter {
+  color: darkorange;
+  background-color: black;
+}
+
+.reviews {
+  color: darkorange;
+  background-color: black;
+}
+
+.footer {
+  color: darkorange;
+  background-color: black;
+}/*# sourceMappingURL=index.css.map */
