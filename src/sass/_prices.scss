@@ -13,12 +13,7 @@
 
 .prices-container {
 min-width: 320px;
-}
-
-@media (min-width: 375px) {
-    .prices-container {
-        margin: 64px 16px 64px 16px;
-        }
+padding: 64px 16px;
 }
 
 .prices-list {
