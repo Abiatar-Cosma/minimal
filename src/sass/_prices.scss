@@ -82,7 +82,7 @@ border: 1px solid #0A224A
 @media (min-width: 768px) {
     .prices-container {
         min-width: 704px;
-        margin: 100px 32px 100px 32px;
+        padding: 100px 32px 100px 32px;
     }
 
     .service-and-price h3 {
@@ -99,7 +99,6 @@ border: 1px solid #0A224A
 @media (min-width: 1440px) {
     .prices-container {
         width: 1096px;
-        margin: 100px 172px 100px 172px;
-        padding: 0px;
+        padding: 100px 172px 100px 172px;
     }
 }
