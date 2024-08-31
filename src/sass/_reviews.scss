@@ -1,4 +1,54 @@
-.reviews {
-    color: darkorange;
-    background-color: black;
+
+.reviews-container {
+    background-color: #F7FAFF;
 }
+
+.reviews-header {
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+}
+
+.blocks-container {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: white;
+}
+
+.profile-cont {
+    display: flex;
+}
+
+.reviews-image-section {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    margin-right: 14px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 20px; 
+    font-weight: bold;
+    
+}
+
+.time {
+    font-size: 16px;
+    
+}
+
+.review-paragraph {
+    font-family: 'Roboto' sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 16px;
+}
+
+
