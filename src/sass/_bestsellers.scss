@@ -85,11 +85,20 @@
   }
   /******** tablet********/
   @media screen and (min-width: 768px) and (max-width: 1440px) {
-    .container {
+    .bestsellers-container {
       max-width: 768px;
       padding: 0 16px;
     }
-    
+
+    .bestsellers-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+    .card-item {
+        width: calc((100% - 24px)/ 2);
+    }
     .bs-item {
       width: calc((100% - 20px) / 2);
     }
@@ -155,11 +164,11 @@
       flex-wrap: nowrap;
       gap: 30px;
     }
+
     .card-item {
-      width: calc((100% - 24px) / 2);
-      display: flex;
-    }
-  
+        width: calc((100% - 24px) / 2);
+        }
+
     .bs-list {
       display: flex;
       row-gap: 30px;
