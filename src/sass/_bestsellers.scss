@@ -121,39 +121,11 @@
   
   /******desktop******/
   @media screen and (min-width: 1440px) {
-    .container {
-      max-width: 1440px;
+    .bestsellers-container {
+      max-width: 1096px;
       padding: 0 15px;
     }
-  
-    .products-list {
-      flex-wrap: nowrap;
-      gap: 16px;
-    }
-  
-    .bestsellers-list {
-      flex-wrap: nowrap;
-      gap: 30px;
-    }
-    .card-item {
-      width: calc((100% - 24px) / 2);
-      display: flex;
-    }
-  
-    .bs-list {
-      display: flex;
-      row-gap: 30px;
-      column-gap: 20px;
-      justify-content: center;
-    }
-  
-    .bs-item {
-      width: calc((100% - 20px) / 2);
-    }
-    .products-photo {
-      width: 312px;
-    }
-    .card-1-mob {
+  .card-1-mob {
       position: absolute;
       width: 1px;
       height: 1px;
@@ -177,4 +149,27 @@
       clip: rect(0 0 0 0);
       overflow: hidden;
     }
+    
+  
+    .bestsellers-list {
+      flex-wrap: nowrap;
+      gap: 30px;
+    }
+    .card-item {
+      width: calc((100% - 24px) / 2);
+      display: flex;
+    }
+  
+    .bs-list {
+      display: flex;
+      row-gap: 30px;
+      column-gap: 20px;
+      justify-content: center;
+    }
+  
+    .bs-item {
+      width: calc((100% - 20px) / 2);
+    }
+    
+    
   }
