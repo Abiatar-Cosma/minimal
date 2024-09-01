@@ -1,4 +1,199 @@
 .newsletter {
-    color: darkorange;
-    background-color: black;
+  padding: 0 0 64px 0;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 0 100px 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 100px 172px 86px 172px;
+
+    .newsletter-container {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+    }
+  }
+}
+
+.newsletter-container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 0 60px;
+  }
+}
+
+.newsletter-title {
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter-title {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.newsletter-text {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 536px;
+  }
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 343px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-box {
+    max-width: 536px;
+  }
+}
+
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding: 11px 20px;
+  background-color: transparent;
+  border: 1px solid darkgray;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
+
+.form-input:focus {
+  border-color: darkgray;
+}
+
+input::placeholder {
+  color: grey;
+}
+
+.span-error {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  fill: red;
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+.input-box input:invalid:focus {
+  border-color: red;
+}
+
+.input-box input:invalid:focus + .span-error {
+  opacity: 1;
+}
+
+.input-box input:invalid:not(:focus) + .span-error {
+  border-color: darkgrey;
+  opacity: 0;
+}
+
+.checkbox {
+  margin-bottom: 30px;
+}
+
+.checkbox-label {
+  font-size: 16px;
+  color: dimgray;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox-label {
+    font-size: 18px;
+  }
+}
+
+.checkbox__span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid darkgray;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.checkbox-input:checked + .checkbox-label .checkbox-span {
+  background-color: #0a224a;
+  fill: white;
+}
+
+.form-button {
+  display: block;
+  width: 224px;
+  background-color: #0a224a;
+  padding: 17px 65px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background-color 300ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .form-button {
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form-button {
+    margin-bottom: 0;
+  }
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #0a224a;
+}
+
+@media screen and (min-width: 1440px) {
+  .newsletter-photo {
+    width: 460px;
+    height: 410px;
+    flex-shrink: 0;
+  }
 }
