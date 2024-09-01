@@ -110,45 +110,45 @@
   object-fit: fill;
 }
 
-@media (min-width: 768px) {
-  .about-container {
-    min-width: 704px;
-    margin: 50px 32px;
-  }
+@media (min-width:768px) {
+    .about-container {
+        min-width: 704px;
+        margin: 0px 32px;
+    }
 
-  .about-text-container {
-    padding: 36px 64px 36px 64px;
-    margin-bottom: 30px;
-  }
+    .about-text-container {
+        padding: 36px 64px 36px 64px;
+        margin-bottom: 30px;
+    }
 
-  .about-title {
-    font-size: 32px;
-    line-height: 45px;
-  }
+    .about-title {   
+       font-size: 32px;
+       line-height: 45px;
+    }
 
-  .about-paragraph {
-    font-size: 18px;
-    line-height: 27px;
-  }
+    .about-paragraph {
+       font-size: 18px;
+       line-height: 27px;
+    }
 
-  .reasons-container {
-    width: 576px;
-  }
+    .reasons-container {
+        width: 576px;
+    }
 
-  .about-reasons {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+    .about-reasons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-  .reason-paragraph {
-    font-size: 18px;
-    line-height: 27px;
-  }
+    .reason-paragraph {
+        font-size: 18px;
+        line-height: 27px;
+    }
 
-  .about-image-container {
-    min-width: 704px;
-  }
+    .about-image-container {
+        min-width: 704px;
+    }
 }
 
 @media (min-width: 1440px) {
