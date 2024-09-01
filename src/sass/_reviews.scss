@@ -1,51 +1,155 @@
-.reviews-container {
-  background-color: #f7faff;
-  display: block;
-  justify-content: center;
+.reviews {
+  padding: 0 0 64px 0;
+  max-width: 375px;
   margin: 0 auto;
+  background-color: #f7faff;
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    max-width: 768px;
+  }
 }
 
-.reviews-header {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 1440px) {
+  .reviews {
+    max-width: 1440px;
+  }
+}
+
+.reviews-container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 0 60px;
+  }
+}
+
+.reviews-title {
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.blocks-container {
-  display: flex;
-  margin-top: 30px;
-  background-color: white;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    font-size: 32px;
+    line-height: 1.4;
+  }
 }
 
-.profile-cont {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .reviews-list {
+    display: flex;
+    gap: 16px;
+  }
 }
 
-.reviews-image-section {
-  width: 56px;
-  height: 56px;
-  border-radius: 50px;
-  margin-right: 14px;
+@media screen and (min-width: 1440px) {
+  .reviews-list {
+    gap: 24px;
+  }
 }
 
-.profile-info {
+.reviews-item {
   display: flex;
   flex-direction: column;
+  padding: 24px;
+  background-color: white;
 }
 
-.name {
-  font-size: 20px;
-  font-weight: bold;
+@media screen and (min-width: 1440px) {
+  .reviews-item {
+    width: 424px;
+  }
 }
 
-.time {
-  font-size: 16px;
+.clients-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
-.review-paragraph {
-  font-family: 'Roboto' sans-serif;
+@media screen and (min-width: 768px) {
+  .clients-box {
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .clients-box {
+    margin-bottom: 16px;
+  }
+}
+
+.clients-name {
+  font-weight: 700;
   font-size: 18px;
-  line-height: 27px;
-  margin-top: 16px;
+  line-height: 1.77;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-name {
+    font-size: 20px;
+    line-height: 2.25;
+    margin-bottom: 4px;
+  }
+}
+
+.clients-reviews {
+  font-size: 14px;
+  line-height: 1.28;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-reviews {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.clients-comment {
+  font-size: 14px;
+  line-height: 1.42;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-comment {
+    font-size: 18px;
+  }
+}
+
+.extra-second-item {
+  display: none;
+}
+
+.extra-third-item {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .extra-second-item {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .extra-third-item {
+    display: block;
+  }
 }
