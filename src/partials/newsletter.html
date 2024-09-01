@@ -1,60 +1,57 @@
-<main class="news-main">
-  <section class="section-newsletter" id="id-section-newsletter">
-    <div class="news-form">
-      <h2 class="newsletter-h-doi">Newsletter</h2>
-      <p class="newsletter-p m-bot">
+<section class="newsletter" id="id-section-newsletter">
+  <div class="newsletter-container">
+    <div>
+      <h2 class="newsletter-title">Newsletter</h2>
+      <p class="newsletter-text">
         Every week we will send you new designs and information about sales.
       </p>
-      <form>
-        <div>
-          <input
-            class="news-input m-bot"
-            type="text"
-            name="newsletter"
-            pattern="^[a-zA-Z]+ [a-zA-Z]+$"
-            placeholder="Name"
-            title="Please enter your Name"
-            required
-          />
+      <form class="form">
+        <div class="form-field">
+          <label class="form-label" for="user-name"> </label>
+          <div class="input-box">
+            <input class="form-input" type="text" name="name" id="user-name" minlength="3" maxlength="16"
+              placeholder="Name" required />
+            <span class="span-error">
+              <svg class="icon-error" width="24" height="24">
+                <use href="#"></use>
+                <!-- adauga icon ----=========-------- -->
+              </svg>
+            </span>
+          </div>
         </div>
-        <div>
-          <input
-            class="news-input m-bot"
-            type="email"
-            name="newsletter"
-            minlength="2"
-            maxlength="16"
-            pattern="\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
-            placeholder="E-mail"
-            title="Please enter your E-mail"
-            required
-          />
+
+        <div class="form-field">
+          <label class="form-label" for="user-email"> </label>
+          <div class="input-box">
+            <input class="form-input" type="email" name="user-email" id="user-email" placeholder="E-mail" required />
+            <span class="span-error">
+              <svg class="icon-error" width="24" height="24">
+                <use href="#"></use>
+              </svg>
+            </span>
+          </div>
         </div>
-        <div class="news-checkbox">
-          <input
-            class="news-box"
-            type="checkbox"
-            id="agree"
-            value="true"
-            name="user-privacy"
-          />
-          <label for="agree">Agree to subscribe to the newsletter</label>
+
+        <div class="checkbox">
+          <input class="checkbox-input visually-hidden" type="checkbox" id="user-checkbox" name="user-newsletter"
+            required />
+          <label class="checkbox-label" for="user-checkbox">
+            <span class="checkbox-span">
+              <svg class="checkbox-icon" width="13" height="13">
+                <use href="#"></use>
+              </svg>
+            </span>
+            Agree to subscribe to the newsletter
+          </label>
         </div>
-        <button class="news-button" type="submit">Send</button>
+        <button class="form-button" type="submit">Send</button>
       </form>
     </div>
 
-    <div>
-      <img
-        class="news-img"
-        width="460"
-        srcset="
-          ./images/newsletter-picture@1x.jpg 1x,
-          ./images/newsletter-picture@2x.jpg 2x
-        "
-        src="./images/newsletter-picture@1x.jpg"
-        alt="Newsletter picture"
-      />
+    <div class="newsletter-photo">
+      <picture>
+        <img src="./images/newsletter-picture@1x.jpg" alt="furniture" />
+      </picture>
     </div>
-  </section>
-</main>
+  </div>
+</section>
