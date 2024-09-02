@@ -43,6 +43,7 @@ ul {
   padding: 0 16px;
   margin: 0 auto;
 }
+
 .products-mob,
 .products-tab,
 .products-desk {
@@ -86,6 +87,7 @@ ul {
   margin-top: 16px;
   color: #0a224a;
 }
+
 
 /******mob******/
 @media screen and (max-width: 768px) {
@@ -164,6 +166,7 @@ ul {
   .products-photo {
     width: 312px;
   }
+  
   .products-mob,
   .products-tab {
     position: absolute;
