@@ -1,4 +1,4 @@
-<main class="news-main">
+<div class="news-main">
   <section class="section-newsletter" id="id-section-newsletter">
     <div class="news-form">
       <h2 class="newsletter-h-doi">Newsletter</h2>
@@ -11,6 +11,8 @@
             class="news-input m-bot"
             type="text"
             name="newsletter"
+            minlength="2"
+            maxlength="16"
             pattern="^[a-zA-Z]+ [a-zA-Z]+$"
             placeholder="Name"
             title="Please enter your Name and Surname"
@@ -22,8 +24,6 @@
             class="news-input m-bot"
             type="email"
             name="newsletter"
-            minlength="2"
-            maxlength="16"
             pattern="\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
             placeholder="E-mail"
             title="Please enter your E-mail"
@@ -37,6 +37,7 @@
             id="agree"
             value="true"
             name="user-privacy"
+            formnovalidate="formnovalidate"
           />
           <label for="agree" class="news-agree"
             >Agree to subscribe to the newsletter</label
@@ -58,4 +59,4 @@
       />
     </div>
   </section>
-</main>
+</div>

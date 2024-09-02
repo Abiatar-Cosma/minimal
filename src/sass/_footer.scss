@@ -4,7 +4,6 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        height: auto;
     }
 
     .footer-style {
@@ -12,7 +11,6 @@
         background-color: #0A224A;
         padding: 36px 16px 16px 16px;
         color: #FFFFFF;
-        min-width: 320px;
     }
 
     .footer-display {
@@ -35,7 +33,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        min-width: 320px;
+        min-width: 320px;   // necesar pt a nu se decala nav
         margin-top: 36px;
         margin-bottom: 36px;
     }
@@ -154,7 +152,6 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        height: auto;
     }
 
     .footer-style {
@@ -162,7 +159,8 @@
         background-color: #0A224A;
         padding: 36px 16px 16px 16px;
         color: #FFFFFF;
-        min-width: 375px;
+        display: flex;
+        flex-direction: column;
     }
 
     .footer-display {
@@ -186,7 +184,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        min-width: 375px;
+        // max-width: 375px;
         max-width: 768px;
         margin-top: 36px;
         margin-bottom: 36px;
@@ -305,7 +303,7 @@
         position: static;
         left: 0;
         bottom: 0;
-        width: 100%;
+        min-width: 768px;
     }
 
     .footer-style {
@@ -313,7 +311,6 @@
         background-color: #0A224A;
         padding: 36px 32px;
         color: #FFFFFF;
-        min-width: 768px;
     }
 
     .footer-display {
@@ -467,7 +464,7 @@
     .footer-style {
         width: auto;
         padding: 36px 60px;
-        min-width: 1440px;
+        // max-width: 1440px;
     }
 
     .footer-display {
@@ -493,7 +490,7 @@
         justify-content: flex-start;
         position: absolute;
             top: 0;
-            right: 252px;
+            right: 250px;
             left: 330px;
             margin: 0;
     }
@@ -518,7 +515,7 @@
 
     .footer-menu-item {
         font-family: Roboto;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 400;
         line-height: 27px;
         padding: 8px 8px 8px 8px;
