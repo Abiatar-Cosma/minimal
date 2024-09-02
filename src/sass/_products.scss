@@ -38,7 +38,7 @@ ul {
   overflow: hidden;
 }
 /* products */
-.container {
+.prod-container {
   max-width: 375px;
   padding: 0 16px;
   margin: 0 auto;
@@ -106,7 +106,7 @@ ul {
 
 /******** tablet********/
 @media screen and (min-width: 768px) and (max-width: 1440px) {
-  .container {
+  .prod-container {
     width: 768px;
     padding: 0 32px;
   }
@@ -132,7 +132,7 @@ ul {
 
 /******desktop******/
 @media screen and (min-width: 1440px) {
-  .container {
+  .prod-container {
     max-width: 1440px;
     padding: 0 15px;
   }
