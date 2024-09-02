@@ -1,3 +1,30 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #0a224a;
+  background-color: #fff;
+  line-height: 24px;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -16,8 +43,17 @@
   padding: 0 16px;
   margin: 0 auto;
 }
-.products {
+
+.products-mob,
+.products-tab,
+.products-desk {
   background-color: #ffffff;
+  padding-top: 100px;
+}
+
+.tab-list {
+  justify-content: center;
+  gap: 16px;
 }
 
 .products-list {
@@ -52,22 +88,96 @@
   color: #0a224a;
 }
 
+
+/******mob******/
+@media screen and (max-width: 768px) {
+  .products-tab,
+  .products-desk {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+/******** tablet********/
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  .products-mob,
+  .products-desk {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .prod-tab-list {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+/******desktop******/
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
     padding: 0 15px;
   }
+
   .products-list {
     flex-wrap: nowrap;
     gap: 16px;
   }
+
+  .bestsellers-list {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  .card-item {
+    width: calc((100% - 24px) / 2);
+    display: flex;
+  }
+
+  .bs-list {
+    display: flex;
+    row-gap: 30px;
+    column-gap: 20px;
+    justify-content: center;
+  }
+
+  .bs-item {
+    width: calc((100% - 20px) / 2);
+  }
   .products-photo {
     width: 312px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-  .container {
-    max-width: 768px;
-    padding: 0 16px;
+  
+  .products-mob,
+  .products-tab {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
