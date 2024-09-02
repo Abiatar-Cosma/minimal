@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
     .news-main {
         padding: 64px 16px 64px 16px;
         display: flex;
@@ -15,20 +15,20 @@
         column-gap: 0;
         row-gap: 30px;
         flex-wrap: wrap;
-        width: 343px;
+        width: auto;
         height: auto;
-        border: 1px solid #B6B6B6;
+        border: 1px solid rgba(182, 182, 182, 0.05);
     }
 
     .news-form {
-        width: 343px;
+        width: 288px;
         height: auto;
         margin-right: 0;
-        border: 1px solid #B6B6B6;
+        border: 1px solid rgba(182, 182, 182, 0.05);
     }
 
     .newsletter-h-doi {
-        width: 343px;
+        width: 288px;
         font-family: Roboto;
         font-size: 32px;
         font-weight: 400;
@@ -40,7 +40,7 @@
     }
 
     .newsletter-p {
-        width: 343px;
+        width: 288px;
         font-family: Roboto;
         font-size: 16px;
         font-weight: 400;
@@ -51,7 +51,7 @@
     }
 
     .news-input {
-        width: 343px;
+        width: 280px;
         padding: 11px 20px 11px 20px;
         gap: 8px;
         border: 1px solid #B6B6B6;
@@ -73,9 +73,9 @@
 
     .news-checkbox {
         margin-bottom: 30px;
-        width: 321px;
+        width: 288px;
         color: #7A7A7A;
-        border: 1px solid #B6B6B6;
+        border: 1px solid rgba(182, 182, 182, 0.05);
         display: flex;
         flex-direction: row;
         column-gap: 8px;
@@ -110,6 +110,40 @@
         line-height: 24px;
         text-align: center;
         cursor: pointer;
+    }
+
+    .news-img {
+        width: 288px;
+        height: 210px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .section-newsletter {
+        width: 343px;
+        height: auto;
+    }
+
+    .news-form {
+        width: 343px;
+        height: auto;
+    }
+
+    .newsletter-h-doi {
+        width: 343px;
+    }
+
+    .newsletter-p {
+        width: 343px;
+    }
+
+    .news-input {
+        width: 343px;
+    }
+
+    .news-checkbox {
+        width: 321px;
     }
 
     .news-img {
@@ -209,7 +243,6 @@
 
     .news-form {
         width: 536px;
-        // height: auto;
         margin-right: 0;
         border: 0;
     }
@@ -223,5 +256,4 @@
         height: 410px;
         object-fit: cover;
     }
-
 }
