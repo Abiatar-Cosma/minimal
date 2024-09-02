@@ -57,8 +57,8 @@
     color: #0a224a;
   }
   /******** mob********/
-  @media screen and (min-width: 375px) and (max-width: 768px) {
-    .card-1-tab {
+  @media screen and (max-width: 768px) {
+    .card-1-tab,.card-1-desktop,.product-12,.product-13 {
       position: absolute;
       width: 1px;
       height: 1px;
@@ -70,18 +70,7 @@
       clip: rect(0 0 0 0);
       overflow: hidden;
     }
-    .card-1-desktop {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
+    
   }
   /******** tablet********/
   @media screen and (min-width: 768px) and (max-width: 1440px) {

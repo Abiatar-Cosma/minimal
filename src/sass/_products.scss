@@ -53,22 +53,57 @@
     color: #0a224a;
   }
 
-  @media screen and (min-width: 1440px) {
-    .container {
-      max-width: 1440px;
-      padding: 0 15px;
+  /******** mob********/
+  @media screen and (max-width: 768px) {
+    .product-2, .product-3, .product-4 {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
     }
-  .products-list {
-    flex-wrap: nowrap;
-    gap: 16px;
   }
-  .products-photo {
-    width: 312px;
-  }
-}
+  
+  /*******tableta**********/
 @media screen and (min-width: 768px) and (max-width: 1440px) {
     .container {
       max-width: 768px;
       padding: 0 16px;
     } 
+    .product-3, .product-4 {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
 }
+
+  /******** desktop********/
+  @media screen and (min-width: 1440px) {
+  .container {
+      max-width: 1440px;
+      padding: 0 15px;
+    }
+
+  .products-list {
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .products-photo {
+    width: 312px;
+  }
+}
+
+
