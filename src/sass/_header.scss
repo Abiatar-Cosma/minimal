@@ -102,10 +102,22 @@
   display: flex;
 }
 
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #F7FAFF; /* Background color for the menu bar */
+  padding: 28px 32px; /* Ensure padding for the menu bar */
+  gap: 0px;
+  position: relative;
+}
+
 .menu-list {
   list-style: none;
   padding: 0;
   text-align: center;
+  
 }
 
 .menu-list li {
@@ -120,9 +132,6 @@
 
 /* Mobile Menu Logo Styles */
 .mobile-menu-logo {
-  position: absolute; 
-  left: 32px; 
-  top: 40px; 
   width: 127px; 
   height: 16px; 
   opacity: 1; 
@@ -130,9 +139,6 @@
 
 /* Close Button */
 .menu-close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   background: none;
   border: none;
   cursor: pointer;
@@ -165,11 +171,8 @@
     padding: 10px 15px; /* Adjust padding for smaller screens */
   }
 
-  .mobile-menu-logo {
-    left: 16px; 
-    top: 36px; 
-    width: 100px; 
-    height: 16px; 
+  .menu-bar {
+    padding: 28px 32px; /* Tablet padding */
   }
 }
 
@@ -186,5 +189,9 @@
 
   .header {
     padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .menu-bar {
+    padding: 28px 16px; /* Mobile padding */
   }
 }
