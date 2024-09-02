@@ -1,3 +1,4 @@
+/* Header Container for Desktop */
 .header-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -15,6 +16,7 @@
   padding: 10px 20px; /* Base padding; adjusted in media queries */
 }
 
+/* Logo */
 .logo-header {
   display: flex;
   align-items: center;
@@ -126,16 +128,6 @@
   opacity: 1; 
 }
 
-/* Adjustments for Mobile */
-@media (max-width: 768px) {
-  .mobile-menu-logo {
-    left: 16px; 
-    top: 36px; 
-    width: 100px; 
-    height: 16px; 
-  }
-}
-
 /* Close Button */
 .menu-close-btn {
   position: absolute;
@@ -159,6 +151,39 @@
 }
 
 @media (max-width: 768px) {
+  /* Tablet Specific Styles */
+  .header-container {
+    width: 768px;
+    height: 95px;
+    padding: 28px 32px 27px 32px;
+    gap: 0px;
+    opacity: 1; /* Ensure the header is visible */
+    background: #F7FAFF;
+  }
+
+  .header {
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .mobile-menu-logo {
+    left: 16px; 
+    top: 36px; 
+    width: 100px; 
+    height: 16px; 
+  }
+}
+
+@media (max-width: 375px) {
+  /* Mobile Specific Styles */
+  .header-container {
+    width: 375px;
+    height: 88px;
+    padding: 28px 16px 28px 16px;
+    gap: 0px;
+    opacity: 1; /* Ensure the header is visible */
+    background: #F7FAFF;
+  }
+
   .header {
     padding: 10px 15px; /* Adjust padding for smaller screens */
   }
