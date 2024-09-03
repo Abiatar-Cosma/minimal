@@ -463,8 +463,9 @@
 
     .footer-style {
         width: auto;
-        padding: 36px 60px;
         // max-width: 1440px;
+        // margin: 0 auto;
+        padding: 36px 60px;
     }
 
     .footer-display {
@@ -474,6 +475,8 @@
         align-items: start;
         row-gap: 24px;
         height: auto;
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     .footer-icon {
