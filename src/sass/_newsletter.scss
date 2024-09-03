@@ -67,8 +67,16 @@
     }
 
     form:invalid button {
-        opacity: 0.3;
+        // opacity: 0.3;
         pointer-events: none;
+    }
+
+    input:invalid {
+        background-color: #F7FAFF;
+    }
+
+    .news-input:valid {
+        background-color: #ddffdd;
     }
 
     .news-checkbox {
