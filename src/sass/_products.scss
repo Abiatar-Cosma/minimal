@@ -39,12 +39,10 @@
 // }
 /* products */
 
-
 .products-mob,
 .products-tab,
 .products-desk {
   background-color: #ffffff;
-  padding-top: 100px ;
 }
 
 .tab-list {
@@ -83,7 +81,6 @@
   margin-top: 16px;
   color: #0a224a;
 }
-
 
 /******mob******/
 @media screen and (max-width: 768px) {
@@ -140,6 +137,7 @@
 @media screen and (min-width: 1440px) {
   .prod-container {
     max-width: 1440px;
+    margin: 0 auto;
     padding: 0 60px;
   }
 
@@ -170,7 +168,7 @@
   .products-photo {
     width: 312px;
   }
-  
+
   .products-mob,
   .products-tab {
     position: absolute;
