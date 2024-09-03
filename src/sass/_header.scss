@@ -10,10 +10,13 @@
   background-color: #F7FAFF;
 }
 
+/* Header */
 .header {
   width: 100%;
   background-color: #F7FAFF;
   padding: 10px 20px; /* Base padding; adjusted in media queries */
+  position: relative;
+  z-index: 100;
 }
 
 /* Logo */
@@ -27,7 +30,7 @@
 .logo-icon {
   width: 127px; 
   height: auto; 
-  fill: #000; 
+  fill: #0A224A; 
   max-width: 100%; 
 }
 
@@ -50,15 +53,21 @@
   background: none;
   border: none;
   cursor: pointer;
-  display: none; 
+  display: none; /* Shown in mobile and tablet view */
+  position: absolute;
+  right: 32px;
+  top: 50%;  /* Center vertically */
+  transform: translateY(-50%); /* Adjust to center */
 }
 
 /* Menu icon */
 .menu-icon, .close-icon {
   width: 24px;
   height: 24px;
+  fill: #0A224A;
 }
 
+/* Desktop Navigation */
 .header-navigation .top-menu {
   display: flex;
   gap: 30px;
@@ -93,7 +102,6 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   z-index: 2000;
   transition: transform 0.3s ease-in-out;
 }
@@ -107,17 +115,16 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #F7FAFF; /* Background color for the menu bar */
-  padding: 28px 32px; /* Ensure padding for the menu bar */
+  background-color: #F7FAFF; 
   gap: 0px;
   position: relative;
+  margin-top: 0px;
 }
 
 .menu-list {
   list-style: none;
   padding: 0;
   text-align: center;
-  
 }
 
 .menu-list li {
@@ -135,6 +142,7 @@
   width: 127px; 
   height: 16px; 
   opacity: 1; 
+  padding: 36px 211px 36px 16px;
 }
 
 /* Close Button */
@@ -143,6 +151,7 @@
   border: none;
   cursor: pointer;
   z-index: 10;
+  padding: 10px 10px;
 }
 
 /* Tablet and Mobile Specific Styles */
@@ -167,16 +176,30 @@
     background: #F7FAFF;
   }
 
-  .header {
-    padding: 10px 15px; /* Adjust padding for smaller screens */
+  .logo-icon {
+    width: 127px; 
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+  }
+
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+    top: 50%; /* Center vertically */
+    right: 32px; /* Align to the right */
+    transform: translateY(-50%); /* Adjust to center */
   }
 
   .menu-bar {
-    padding: 28px 32px; /* Tablet padding */
+    margin-top: 0px; 
+    margin-bottom: 150px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   /* Mobile Specific Styles */
   .header-container {
     width: 375px;
@@ -187,11 +210,26 @@
     background: #F7FAFF;
   }
 
-  .header {
-    padding: 10px 15px; /* Adjust padding for smaller screens */
+  .logo-icon {
+    width: 100px; 
+    height: 14px; 
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+
+  .menu-btn {
+    width: 24px;
+    height: 24px;
+    top: 50%; /* Center vertically */
+    right: 16px; /* Align to the right */
+    transform: translateY(-50%); /* Adjust to center */
   }
 
   .menu-bar {
-    padding: 28px 16px; /* Mobile padding */
+    margin-top: 0px; 
+    margin-bottom: 114px;
   }
 }
+
