@@ -10,10 +10,13 @@
   background-color: #F7FAFF;
 }
 
+/* Header */
 .header {
   width: 100%;
   background-color: #F7FAFF;
   padding: 10px 20px; /* Base padding; adjusted in media queries */
+  position: relative;
+  z-index: 100;
 }
 
 /* Logo */
@@ -50,15 +53,21 @@
   background: none;
   border: none;
   cursor: pointer;
-  display: none; 
+  display: none; /* Shown in mobile and tablet view */
+  position: absolute;
+  right: 32px;
+  top: 50%;  /* Center vertically */
+  transform: translateY(-50%); /* Adjust to center */
 }
 
 /* Menu icon */
 .menu-icon, .close-icon {
   width: 24px;
   height: 24px;
+  fill: #0A224A;
 }
 
+/* Desktop Navigation */
 .header-navigation .top-menu {
   display: flex;
   gap: 30px;
@@ -117,7 +126,6 @@
   list-style: none;
   padding: 0;
   text-align: center;
-  
 }
 
 .menu-list li {
@@ -135,6 +143,7 @@
   width: 127px; 
   height: 16px; 
   opacity: 1; 
+  margin-bottom: 20px;
 }
 
 /* Close Button */
@@ -143,6 +152,10 @@
   border: none;
   cursor: pointer;
   z-index: 10;
+  position: absolute;
+  right: 32px;
+  top: 50%;  /* Center vertically */
+  transform: translateY(-50%); /* Adjust to center */
 }
 
 /* Tablet and Mobile Specific Styles */
@@ -167,8 +180,21 @@
     background: #F7FAFF;
   }
 
-  .header {
-    padding: 10px 15px; /* Adjust padding for smaller screens */
+  .logo-icon {
+    width: 127px; 
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+  }
+
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+    top: 50%; /* Center vertically */
+    right: 32px; /* Align to the right */
+    transform: translateY(-50%); /* Adjust to center */
   }
 
   .menu-bar {
@@ -176,7 +202,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   /* Mobile Specific Styles */
   .header-container {
     width: 375px;
@@ -187,8 +213,21 @@
     background: #F7FAFF;
   }
 
-  .header {
-    padding: 10px 15px; /* Adjust padding for smaller screens */
+  .logo-icon {
+    width: 100px; 
+    height: 14px; 
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+
+  .menu-btn {
+    width: 24px;
+    height: 24px;
+    top: 50%; /* Center vertically */
+    right: 16px; /* Align to the right */
+    transform: translateY(-50%); /* Adjust to center */
   }
 
   .menu-bar {
