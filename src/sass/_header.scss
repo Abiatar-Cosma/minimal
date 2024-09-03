@@ -7,13 +7,13 @@
   justify-content: space-between;
   align-items: center;
   height: 95px;
-  background-color: #F7FAFF;
+  background-color: #f7faff;
 }
 
 /* Header */
 .header {
   width: 100%;
-  background-color: #F7FAFF;
+  background-color: #f7faff;
   padding: 10px 20px; /* Base padding; adjusted in media queries */
   position: relative;
   z-index: 100;
@@ -23,48 +23,50 @@
 .logo-header {
   display: flex;
   align-items: center;
-  justify-content: center; 
-  padding: 10px; 
+  justify-content: center;
+  padding: 10px;
 }
 
 .logo-icon {
-  width: 127px; 
-  height: auto; 
-  fill: #0A224A; 
-  max-width: 100%; 
+  width: 127px;
+  height: auto;
+  fill: #0a224a;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
   .logo-icon {
-    width: 127px; 
-    height: 16px; 
+    width: 127px;
+    height: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .logo-icon {
-    width: 100px; 
-    height: 14px; 
+    width: 100px;
+    height: 14px;
   }
 }
 
 /* Menu button styles */
-.menu-btn, .header-mobile-btn {
+.menu-btn,
+.header-mobile-btn {
   background: none;
   border: none;
   cursor: pointer;
   display: none; /* Shown in mobile and tablet view */
   position: absolute;
   right: 32px;
-  top: 50%;  /* Center vertically */
+  top: 50%; /* Center vertically */
   transform: translateY(-50%); /* Adjust to center */
 }
 
 /* Menu icon */
-.menu-icon, .close-icon {
+.menu-icon,
+.close-icon {
   width: 24px;
   height: 24px;
-  fill: #0A224A;
+  fill: #0a224a;
 }
 
 /* Desktop Navigation */
@@ -79,7 +81,7 @@
 
 .header-navigation .top-menu-item .link {
   text-decoration: none;
-  color: #0A224A;
+  color: #0a224a;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -88,7 +90,7 @@
 }
 
 .header-navigation .top-menu-item .link:hover {
-  border-bottom: 2px solid #0A224A;
+  border-bottom: 2px solid #0a224a;
 }
 
 /* Mobile Menu */
@@ -98,7 +100,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -115,10 +117,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #F7FAFF; 
+  background-color: #f7faff;
   gap: 0px;
   position: relative;
   margin-top: 0px;
+  margin-bottom: 150px;
 }
 
 .menu-list {
@@ -133,15 +136,15 @@
 
 .menu-list li a {
   text-decoration: none;
-  color: #0A224A;
+  color: #0a224a;
   font-size: 18px;
 }
 
 /* Mobile Menu Logo Styles */
 .mobile-menu-logo {
-  width: 127px; 
-  height: 16px; 
-  opacity: 1; 
+  width: 127px;
+  height: 16px;
+  opacity: 1;
   padding: 36px 211px 36px 16px;
 }
 
@@ -156,7 +159,8 @@
 
 /* Tablet and Mobile Specific Styles */
 @media (max-width: 1024px) {
-  .menu-btn, .header-mobile-btn {
+  .menu-btn,
+  .header-mobile-btn {
     display: block; /* Show menu button */
   }
 
@@ -173,11 +177,11 @@
     padding: 28px 32px 27px 32px;
     gap: 0px;
     opacity: 1; /* Ensure the header is visible */
-    background: #F7FAFF;
+    background: #f7faff;
   }
 
   .logo-icon {
-    width: 127px; 
+    width: 127px;
     height: 16px;
     position: absolute;
     top: 50%;
@@ -194,7 +198,7 @@
   }
 
   .menu-bar {
-    margin-top: 0px; 
+    margin-top: 0px;
     margin-bottom: 150px;
   }
 }
@@ -207,12 +211,12 @@
     padding: 28px 16px 28px 16px;
     gap: 0px;
     opacity: 1; /* Ensure the header is visible */
-    background: #F7FAFF;
+    background: #f7faff;
   }
 
   .logo-icon {
-    width: 100px; 
-    height: 14px; 
+    width: 100px;
+    height: 14px;
     position: absolute;
     top: 50%;
     left: 16px;
@@ -228,8 +232,7 @@
   }
 
   .menu-bar {
-    margin-top: 0px; 
+    margin-top: 0px;
     margin-bottom: 114px;
   }
 }
-
