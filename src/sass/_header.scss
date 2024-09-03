@@ -10,10 +10,13 @@
   background-color: #F7FAFF;
 }
 
+/* Header */
 .header {
   width: 100%;
   background-color: #F7FAFF;
   padding: 10px 20px; /* Base padding; adjusted in media queries */
+  position: relative;
+  z-index: 100;
 }
 
 /* Logo */
@@ -27,7 +30,7 @@
 .logo-icon {
   width: 127px; 
   height: auto; 
-  fill: #000; 
+  fill: #0A224A;
   max-width: 100%; 
 }
 
@@ -50,15 +53,19 @@
   background: none;
   border: none;
   cursor: pointer;
-  display: none; 
+  display: none; /* Shown in mobile and tablet view */
+  position: absolute;
+  right: 32px;
 }
 
 /* Menu icon */
 .menu-icon, .close-icon {
   width: 24px;
   height: 24px;
+  fill: #0A224A;
 }
 
+/* Desktop Navigation */
 .header-navigation .top-menu {
   display: flex;
   gap: 30px;
@@ -107,8 +114,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #F7FAFF; /* Background color for the menu bar */
-  padding: 28px 32px; /* Ensure padding for the menu bar */
+  background-color: #F7FAFF; 
+  padding: 28px 32px; 
   gap: 0px;
   position: relative;
 }
@@ -117,7 +124,6 @@
   list-style: none;
   padding: 0;
   text-align: center;
-  
 }
 
 .menu-list li {
@@ -135,6 +141,7 @@
   width: 127px; 
   height: 16px; 
   opacity: 1; 
+  margin-bottom: 20px;
 }
 
 /* Close Button */
@@ -143,6 +150,9 @@
   border: none;
   cursor: pointer;
   z-index: 10;
+  position: absolute;
+  right: 32px;
+  top: 28px;
 }
 
 /* Tablet and Mobile Specific Styles */
@@ -174,6 +184,16 @@
   .menu-bar {
     padding: 28px 32px; /* Tablet padding */
   }
+
+  .logo-icon {
+    width: 127px; 
+    height: 16px; 
+  }
+
+  .menu-close-btn {
+    right: 32px;
+    top: 28px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -193,5 +213,15 @@
 
   .menu-bar {
     padding: 28px 16px; /* Mobile padding */
+  }
+
+  .logo-icon {
+    width: 100px; 
+    height: 14px; 
+  }
+
+  .menu-close-btn {
+    right: 16px;
+    top: 28px;
   }
 }
