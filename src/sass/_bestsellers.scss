@@ -65,6 +65,8 @@
   .bs-container {
     max-width: 768px;
     padding: 0 32px;
+    margin: 0 auto;
+    
   }
   .bestsellers-mob,
   .bestsellers-desk {
@@ -123,6 +125,7 @@
   .desk-list {
     display: flex;
     gap: 24px;
+    justify-content: center;
   }
   .desk-item {
     width: calc((100% - 24px) / 2);
@@ -132,5 +135,6 @@
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 30px;
+    justify-content: center;
   }
 }
