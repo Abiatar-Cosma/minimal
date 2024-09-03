@@ -30,7 +30,7 @@
 .logo-icon {
   width: 127px; 
   height: auto; 
-  fill: #000; 
+  fill: #0A224A; 
   max-width: 100%; 
 }
 
@@ -102,7 +102,6 @@
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   z-index: 2000;
   transition: transform 0.3s ease-in-out;
 }
@@ -143,7 +142,7 @@
   width: 127px; 
   height: 16px; 
   opacity: 1; 
-  margin-bottom: 20px;
+  padding: 36px 211px 36px 16px;
 }
 
 /* Close Button */
@@ -152,10 +151,7 @@
   border: none;
   cursor: pointer;
   z-index: 10;
-  position: absolute;
-  right: 32px;
-  top: 50%;  /* Center vertically */
-  transform: translateY(-50%); /* Adjust to center */
+  padding: 28px 16px 28px 211px;
 }
 
 /* Tablet and Mobile Specific Styles */
